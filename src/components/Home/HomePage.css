@@ -1,0 +1,8 @@
+.card:hover .btn {
+  transform: translateY(-300px);
+  opacity: 1;
+}
+
+.btn {
+  transition: all 1s 0.3s;
+}
