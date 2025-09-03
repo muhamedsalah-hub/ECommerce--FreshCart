@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+🛒 E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully functional E-commerce application built with performance and user experience in mind. The platform supports browsing, filtering, authentication, wishlist, cart management, and secure payments.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Home Page
 
-## Expanding the ESLint configuration
+  Paginated product listing
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  Product categories display
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+-Products Page
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  Filter by product name
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-Categories & Subcategories
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  Browse products by categories and nested subcategories
+
+-Authentication
+
+  User registration & login
+
+  Update password
+
+  Reset password
+
+-Wishlist
+
+  Add products to wishlist
+
+  Clear wishlist or update quantity of items
+
+-Cart
+
+  Add products with quantity control
+
+  Update or remove items
+
+  Clear all products from cart
+
+-Payment
+
+  Integrated payment flow powered by Strapi backend
+
+-Routing & Security
+
+  Protected routes for sensitive pages
+
+  Authentication-based access
+
+-Performance Optimization
+
+  Lazy-loaded components
+
+  Lazy-loaded images
+
+  Optimized for Core Web Vitals LCP & INP & CLS
